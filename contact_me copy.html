@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="contact_me.css" />
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", toggleMenu);
+      });
+
+      function toggleMenu() {
+        const navbar = document.getElementById("main_nav");
+        navbar.classList.toggle("show");
+      }
+    </script>
+    <!-- <style type="text/css">
+    </style> -->
+  </head>
+  <body id="tech">
+    <header class="top_nav">
+      <h1 class="name">Harry Wu</h1>
+      <span class="mobile-menu" id="hamburger">&#8801;</span>
+      <nav id="main_nav">
+        <ul class="menu">
+          <li>
+            <a
+              href="../WebDevClassFile/HW_WebDev/Midterm_Project/Home_Page/library.html"
+              >Home</a
+            >
+          </li>
+          <li><a href="#" class="home">Projects</a></li>
+          <li><a href="#" class="home">Resume</a></li>
+          <li><a href="./contact_me copy.html" class="home">Contact</a></li>
+          <li>
+            <a
+              href="../WebDevClassFile/HW_WebDev/Midterm_Project/Bio_Page/bio.html"
+              class="home"
+              >Bio</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container" id="blue">
+      <h1>Contact Me!</h1>
+      <form action="https://formspree.io/f/xeoaqlga" method="POST">
+        <div class="row">
+          <label for="name" class="label-lg">Name</label>
+          <input type="text" name="name" class="input-lg" required />
+
+          <label for="email" class="label-lg">Email:</label>
+          <input type="email" name="email" class="input-lg" required />
+
+          <label for="number" class="label-lg">Phone Number:</label>
+          <input type="number" name="number" class="input-lg" required />
+        </div>
+
+        <div class="message-area">
+          <label for="message">Leave Me A Message:</label>
+          <textarea
+            class="message"
+            name="message"
+            placeholder="Leave a comment or question here."
+            required
+          ></textarea>
+        </div>
+
+        <dive class="btn_bar">
+          <button class="btn-dark" type="submit">Send</button>
+        </dive>
+        <input
+          name="subject"
+          type="hidden"
+          value="New Submission From {{name}}"
+        />
+      </form>
+    </div>
+
+    <div class="bottom_nav">
+      <nav id="second_nav">
+        <ul class="bottom_menu">
+          <li>
+            <a
+              href="../WebDevClassFile/HW_WebDev/Midterm_Project/Home_Page/library.html"
+              class="home"
+              >Home</a
+            >
+          </li>
+          <li><a href="#" class="home">Projects</a></li>
+          <li><a href="#" class="home">Resume</a></li>
+          <li>
+            <a href="./contact_me copy.html" class="home">Contact</a>
+          </li>
+          <li>
+            <a
+              href="../WebDevClassFile/HW_WebDev/Midterm_Project/Bio_Page/bio.html"
+              class="home"
+              >Bio</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

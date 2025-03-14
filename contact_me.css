@@ -1,0 +1,307 @@
+/* fonts imported from google */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* .press-start-2p-regular {
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      } */
+:root {
+  --c-bg: #e2e8f0;
+  --c-text: #475569;
+  --c-bg-btn: #1e293b;
+  --c-btn-hover: #64748b;
+  --c-btn-text: #f8fafc;
+  --ff-heading: "Press Start 2P", system-ui;
+}
+
+/* Apply different IDs for Different Color Themes */
+
+#blue {
+  --c-bg: #1e3a8a;
+  --c-text: #dbeafe;
+  --c-bg-btn: #3b82f6;
+  --c-btn-hover: #1d4ed8;
+  --c-btn-text: #eff6ff;
+}
+
+/* Base styles */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: burlywood;
+}
+
+/* The message me container */
+.container {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 0 auto;
+  color: var(--c-text);
+  background-color: var(--c-bg);
+}
+/* Name, Email, Number secetion */
+.row {
+  display: flex;
+  /* these are going downwards */
+  flex-direction: column;
+  justify-content: flex-start;
+  /* allow the columns to be places left */
+  align-items: left;
+}
+/* The name of the columns */
+.label-lg {
+  font-size: 1.3rem;
+}
+/* the box area */
+.input-lg {
+  /* makes the box bigger */
+  padding: 0.5rem;
+  /* the border radiusof the small white text boxes */
+  border-radius: 0.25rem;
+  /* make the border color a css var */
+  border: 1px solid grey;
+  /* gives more space to the right of the contact me box */
+  margin-right: 2rem;
+}
+/* The name of the message area */
+.message-area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+/* message box */
+.message {
+  /* make the box for the message longer */
+  height: 16rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* the button */
+.btn_bar {
+  margin-top: 1rem;
+  display: flex;
+  /* brings the button from left to the right */
+  flex-direction: row-reverse;
+}
+
+.btn-dark {
+  width: 100%;
+  border-radius: 0.5rem;
+  /* makes the size of the button bigger */
+  padding: 0.5rem;
+  background-color: var(--c-bg-btn);
+}
+
+.btn-dark:hover {
+  background-color: var(--c-btn-hover);
+}
+
+#tech h1 {
+  font-family: var(--ff-heading);
+}
+/* changing the font of all the smaller names */
+body#tech {
+  font-family: var(--f-body);
+}
+/* The nav bar */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../WebDevClassFile/HW_WebDev/Midterm_Project/Home_Page/img/waterpattern.webp);
+  padding: 0.2rem;
+  position: relative;
+  height: 5rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* logo */
+.name {
+  margin: 0;
+  font-weight: 300;
+  color: blueviolet;
+}
+/* links and url */
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+}
+/* preven the li width from being smaller than 5rem */
+.menu li {
+  min-width: 10rem;
+  font-size: 2rem;
+}
+/* deeper links */
+.menu li a {
+  display: block;
+  color: black;
+  height: 2rem;
+  align-content: center;
+  text-decoration: none;
+  transition: 1s;
+}
+/* hover effect */
+
+.menu li a:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* bottom nav bar */
+
+.bottom_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../../Desktop/WebDevClassFile/HW_WebDev/Midterm_Project/Home_Page/img/waterpattern.webp);
+  padding: 0 2rem;
+  position: relative;
+}
+
+/* link color */
+.bottom_nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.bottom_menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom_menu li {
+  min-width: 13rem;
+  font-size: 2rem;
+}
+
+.bottom_menu a {
+  display: block;
+  padding: 1rem;
+}
+
+.bottom_menu a:hover {
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* media quaries */
+/* tablet mode*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+  }
+
+  .message {
+    font-size: 2rem;
+  }
+  /*nave bar height  */
+  .top_nav {
+    height: 10rem;
+  }
+  /* name/logo */
+  .name {
+    padding: 0.5rem;
+    font-size: 30px;
+  }
+  /* nav bar at top */
+  .menu li {
+    min-width: 7rem;
+    margin: 5px;
+  }
+
+  /* bottom nav bar */
+
+  /* conetent inside the nav bar */
+  .bottom_menu li {
+    min-width: 8.8rem;
+  }
+
+  nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+    padding: 20px;
+    width: 80%;
+  }
+
+  .message {
+    font-size: 1.2rem;
+  }
+
+  body {
+    background-color: burlywood;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .name {
+    margin: 0.5rem;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    color: black;
+    font-size: 5rem;
+    cursor: pointer;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+  }
+
+  .bottom_menu {
+    width: 100%;
+  }
+
+  .bottom_menu li {
+    min-width: 20px;
+    text-align: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+}
