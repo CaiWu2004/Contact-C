@@ -129,7 +129,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-image: url(../WebDevClassFile/HW_WebDev/Midterm_Project/Home_Page/img/herringbone.webp);
+  background-image: url(../HW_WebDev/Midterm_Project/Home_Page/img/herringbone.webp);
   padding: 1.5rem;
   position: relative;
   min-height: 7rem;
@@ -251,7 +251,7 @@ header {
 
 @media screen and (max-width: 768px) {
   body {
-    background-image: url(../WebDevClassFile/HW_WebDev/Midterm_Project/Home_Page/img/herringbone.webp);
+    background-image: url(../HW_WebDev/Midterm_Project/Home_Page/img/herringbone.webp);
   }
   .container {
     margin-top: 20px;
@@ -307,7 +307,7 @@ header {
     flex-direction: column;
     width: 100%;
     top: 0rem;
-    background: url(../WebDevClassFile/HW_WebDev/Midterm_Project/Home_Page/img/herringbone.webp);
+    background: url(../HW_WebDev/Midterm_Project/Home_Page/img/herringbone.webp);
     display: block;
     margin: 0;
     padding: 0;
